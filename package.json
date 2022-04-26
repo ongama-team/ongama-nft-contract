@@ -1,0 +1,25 @@
+{
+  "name": "ongama-nft-contract",
+  "version": "1.0.0",
+  "description": "ongama nft smart contract implementation",
+  "main": "app.js",
+  "scripts": {
+    "test": "truffle compile && mocha --exit --recursive --timeout 10000",
+    "compile": "truffle compile"
+  },
+  "author": "Verdotte Aututu",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "1.4.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.2",
+    "truffle": "^5.5.9",
+    "truffle-flattener": "^1.6.0",
+    "web3": "1.7.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.9",
+    "chai": "^4.3.6"
+  }
+}
