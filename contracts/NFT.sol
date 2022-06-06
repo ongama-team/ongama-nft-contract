@@ -88,7 +88,6 @@ contract NFT is ERC721, Ownable {
     function updatePrice(uint _tokenId, uint _price) public returns (bool) {
         uint oldPrice = priceMap[_tokenId];
         require(msg.sender == ownerOf(_tokenId), "Error, you are not the owner");
-        require(oldPrice == _price, "Error,new price should not be equal to old price");
         priceMap[_tokenId] = _price;
 
         emit PriceUpdate(msg.sender, oldPrice, _price, _tokenId);
